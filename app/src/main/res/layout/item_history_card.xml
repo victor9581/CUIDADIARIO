@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_rounded_bg"
+    android:elevation="3dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_marginBottom="14dp">
+
+    <!-- Fila Superior: Marca temporal + Badge -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="6dp">
+
+        <TextView
+            android:id="@+id/tvHistDateTime"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="11/10/2026 • 08:30 AM"
+            android:textColor="#0284C7"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvHistRecipient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="👤 Paciente"
+            android:textColor="#334155"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <!-- Fármaco y Dosis -->
+    <TextView
+        android:id="@+id/tvHistMedName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amoxicilina • 1 Tableta"
+        android:textColor="#0F172A"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="6dp" />
+
+    <!-- Dirección GPS -->
+    <TextView
+        android:id="@+id/tvHistAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="📍 Lugar: Zona 10, Ciudad de Guatemala"
+        android:textColor="#64748B"
+        android:textSize="12sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Botón para abrir en Google Maps -->
+    <Button
+        android:id="@+id/btnHistOpenMap"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="📍 Ver ubicación exacta en Google Maps"
+        android:background="@drawable/btn_primary_raised"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:elevation="3dp" />
+
+</LinearLayout>

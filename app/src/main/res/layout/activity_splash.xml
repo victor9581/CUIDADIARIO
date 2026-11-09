@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F2942"
+    android:padding="32dp">
+
+    <!-- Contenedor Central: Logo + Marca + Eslogan -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- Contenedor del Logo / Enfermera Sofía -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            app:cardCornerRadius="70dp"
+            app:cardElevation="12dp"
+            app:cardBackgroundColor="#FFFFFF"
+            android:layout_marginBottom="24dp">
+
+            <ImageView
+                android:id="@+id/ivSplashLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher_foreground" />
+        </androidx.cardview.widget.CardView>
+
+        <!-- Nombre de la App -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CuidaDiario"
+            android:textColor="#FFFFFF"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.04" />
+
+        <!-- Subtítulo / Módulo Clínico -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SISTEMA INTEGRAL DE SEGUIMIENTO MÉDICO"
+            android:textColor="#38BDF8"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:layout_marginTop="4dp" />
+
+        <!-- Línea divisoria sutil -->
+        <View
+            android:layout_width="60dp"
+            android:layout_height="2dp"
+            android:background="#1E3A8A"
+            android:layout_marginVertical="18dp" />
+
+        <!-- Eslogan Oficial -->
+        <TextView
+            android:id="@+id/tvEslogan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="«Tu salud a tiempo, la tranquilidad de tu familia.»"
+            android:textColor="#94A3B8"
+            android:textSize="15sp"
+            android:textStyle="italic"
+            android:textAlignment="center"
+            android:paddingHorizontal="16dp" />
+
+    </LinearLayout>
+
+    <!-- Pie de Pantalla: Indicador de carga discreto y versión -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ProgressBar
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:indeterminate="true"
+            android:indeterminateTint="#38BDF8"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Versión 1.0 • Plataforma Segura"
+            android:textColor="#64748B"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</RelativeLayout>

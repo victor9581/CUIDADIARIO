@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_meds"
+            android:icon="@android:drawable/ic_menu_myplaces"
+            android:title="💊 Mis Tratamientos" />
+        <item
+            android:id="@+id/nav_tasks"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="📝 Agenda Diaria" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@android:drawable/ic_menu_recent_history"
+            android:title="🗺️ Bitácora / Historial GPS" />
+    </group>
+
+    <item android:title="Soporte y Ayuda">
+        <menu>
+            <item
+                android:id="@+id/nav_manual"
+                android:icon="@android:drawable/ic_menu_help"
+                android:title="📖 Manual de Usuario" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@android:drawable/ic_menu_info_details"
+                android:title="ℹ️ Acerca de CuidaDiario" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@android:drawable/ic_menu_share"
+                android:title="📋 Compartir Reporte" />
+            <item
+                android:id="@+id/nav_exit"
+                android:icon="@android:drawable/ic_lock_power_off"
+                android:title="🚪 Cerrar Sesión" />
+        </menu>
+    </item>
+</menu>

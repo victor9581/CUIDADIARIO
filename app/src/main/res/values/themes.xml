@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Tema compatible con AppCompat -->
+    <style name="Theme.CUIDADIARIO" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">#0288D1</item>
+        <item name="colorPrimaryDark">#01579B</item>
+        <item name="colorAccent">#4CAF50</item>
+    </style>
+</resources>

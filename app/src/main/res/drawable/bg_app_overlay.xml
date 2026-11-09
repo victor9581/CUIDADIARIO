@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Tu imagen de fondo -->
+    <item android:drawable="@drawable/bg_app" />
+
+    <!-- Capa protectora semitransparente para dar contraste a los textos -->
+    <item>
+        <color android:color="#E6F8FAFC" />
+    </item>
+</layer-list>

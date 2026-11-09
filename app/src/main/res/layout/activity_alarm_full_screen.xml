@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0F172A"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <!-- Indicador de Alarma -->
+    <TextView
+        android:id="@+id/tvAlarmBadge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⏰ HORA DEL CUIDADO"
+        android:textColor="#38BDF8"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Foto del Medicamento en grande -->
+    <ImageView
+        android:id="@+id/imgAlarmPhoto"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:background="#1E293B"
+        android:scaleType="centerCrop"
+        android:src="@android:drawable/ic_menu_camera"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Título Principal (ej. Administrar a Toby) -->
+    <TextView
+        android:id="@+id/tvAlarmTarget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Administrar Dosis"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginBottom="6dp" />
+
+    <!-- Detalle (Medicamento y Dosis) -->
+    <TextView
+        android:id="@+id/tvAlarmDetail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Amoxicilina • 1 Tableta"
+        android:textColor="#94A3B8"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:id="@+id/tvAlarmStatusHint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desliza para elegir una acción"
+        android:textColor="#64748B"
+        android:textSize="13sp"
+        android:layout_marginBottom="24dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <!-- Contenedor del Control Deslizable (Swipe Track) -->
+    <RelativeLayout
+        android:id="@+id/rlSwipeContainer"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#1E293B"
+        android:padding="6dp"
+        android:layout_marginBottom="20dp">
+
+        <!-- Texto izquierdo: Posponer -->
+        <TextView
+            android:id="@+id/tvSwipeLeftLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="14dp"
+            android:text="◀ Posponer 10m"
+            android:textColor="#F59E0B"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <!-- Texto derecho: Administrar -->
+        <TextView
+            android:id="@+id/tvSwipeRightLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="14dp"
+            android:text="Administrar ▶"
+            android:textColor="#10B981"
+            android:textSize="12sp"
+            android:textStyle="bold" />
+
+        <!-- Botón Deslizador Central -->
+        <Button
+            android:id="@+id/btnSwipeThumb"
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="#0284C7"
+            android:text="DESLIZAR"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+</LinearLayout>
